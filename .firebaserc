@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "monitoring-rwcs",
+    "arvirotech-media": "monitoring-rwcs"
+  },
+  "targets": {
+    "monitoring-rwcs": {
+      "hosting": {
+        "arvirotech-media": [
+          "arvirotech-media"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "git.enabled": false,
+    "git.enableStatusBarSync": false,
+    "gitlens.blame.heatmap.enabled": false
+}

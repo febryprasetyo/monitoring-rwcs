@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 94%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+
+/* .btn-lokasi {
+    color: white;
+} */
+.navbar {
+    background-color: #35434a;
+}
+
+.navbar-brand>img {
+    height: 36px;
+    width: auto;
+}
+
+.btn-lokasi {
+    color: #ffff;
+}
+
+.dropdown-item {
+    color: rebeccapurple;
+}
+
+.topic {
+    font-weight: 900;
+}
+
+/* Tab */
+* {
+    box-sizing: border-box
+}
+
+/* Style the tab */
+.tabtab {
+    margin-top: 2rem;
+}
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    border-radius: 1rem;
+    background-color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 0%;
+    border-left: none;
+    /* height: 100%; */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+/* V-tab */
+
+/* Tab */
+* {
+    box-sizing: border-box
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.kotak {
+    border-radius: 1em;
+    margin-top: 4rem;
+    margin-left: -2rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    border: 1px;
+    border-style: solid;
+    border-color: slategray;
+}
+
+.container .topic {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.content .list {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 50px;
+    position: relative;
+}
+
+.content .list label {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    color: #333;
+    z-index: 12;
+}
+
+#titik1:checked~.list label.titik1,
+#titik2:checked~.list label.titik2,
+#titik3:checked~.list label.titik3,
+#titik4:checked~.list label.titik4,
+#titik5:checked~.list label.titik5 {
+    color: #fff;
+}
+
+.content .list label:hover {
+    color: skyblue;
+}
+
+.content .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    background: skyblue;
+    transition: all 0.4s ease;
+}
+
+#titik1:checked~.list .slider {
+    top: 0;
+}
+
+#titik2:checked~.list .slider {
+    top: 60px;
+}
+
+#titik3:checked~.list .slider {
+    top: 120px;
+}
+
+#titik4:checked~.list .slider {
+    top: 180px;
+}
+
+#titik5:checked~.list .slider {
+    top: 240px;
+}
+
+#titik6:checked~.list .slider {
+    top: 300px;
+}
+
+.content .text-content {
+    width: 80%;
+    height: 100%;
+}
+
+.content .text {
+    display: none;
+}
+
+.content .text .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.content .text p {
+    text-align: justify;
+}
+
+.content .text-content .titik1 {
+    display: block;
+}
+
+#titik1:checked~.text-content .titik1,
+#titik2:checked~.text-content .titik2,
+#titik3:checked~.text-content .titik3,
+#titik4:checked~.text-content .titik4,
+#titik5:checked~.text-content .titik5 {
+    display: block;
+}
+
+#titik2:checked~.text-content .titik1,
+#titik2:checked~.text-content .titik1,
+#titik3:checked~.text-content .titik1,
+#titik4:checked~.text-content .titik1,
+#titik5:checked~.text-content .titik1 {
+    display: none;
+}
+
+.content input {
+    display: none;
+}
+
+
+/* V-TAB */
+.content input {
+    display: none;
+}
+
+.img-size {
+    width: 200px;
+    height: 200px;
+}
+
+/* modal image */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+
+    .content .text .title {
+        font-size: 12px;
+        /* margin-bottom: 1rem; */
+    }
+
+    .content .slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 25%;
+        width: 100%;
+        border-radius: 12px;
+        background: skyblue;
+        transition: all 0.4s ease;
+    }
+
+    .content .list label {
+        height: 60px;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 60px;
+        cursor: pointer;
+        padding-left: 25px;
+        transition: all 0.5s ease;
+        color: rgb(104, 4, 4);
+        z-index: 12;
+    }
+
+}
+
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 768px) {
+    .nav-text {
+        display: none;
+    }
+
+
+
+    /* .navbar-brand {
+        text-align: center;
+        float: none;
+        margin: 0;
+        justify-content: center;
+    } */
+}
